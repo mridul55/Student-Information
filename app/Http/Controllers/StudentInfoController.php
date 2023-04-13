@@ -31,6 +31,32 @@ class StudentInfoController extends Controller
      */
     public function store(Request $request)
     {
+        // $request->validate(
+        //     [
+        //         'class_name'=> 'required',
+        //         'roll_no'=> 'required|unique:students',
+        //         'student_name'=> 'required',
+        //         'father_name'=> 'required',
+        //         'mother_name'=> 'required',
+        //         'email'=> 'required|unique:students',
+        //         'phone'=> 'required|unique:students',
+        //         'address'=> 'required',
+
+        //     ],
+        //     [
+        //         'class_name.required' => 'class Is Required',
+        //         'roll_no.required' => 'roll_no Is Required',
+        //         'roll_no.unique' => 'roll_no Already Exits',
+        //         'student_name.required' => 'Name Is Required',
+        //         'father_name.required' => 'Father Name Is Required',
+        //         'mother_name.required' => 'Mother Name Is Required',
+        //         'email.required' => 'Email Is Required',
+        //         'email.unique' => 'Email Already Exits',
+        //         'phone.required' => 'Phone Number Is Required',
+        //         'phone.unique' => 'Phone Number Already Exits',
+        //         'address.required' => 'Address Is Required',
+        //     ]
+        // );
 
         $student   =   StudentInfo::updateOrCreate(
                     [

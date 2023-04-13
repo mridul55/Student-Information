@@ -12,7 +12,6 @@
           $('#ajaxStudentModel').html("Add Student Information");
           $('#ajax-student-model').modal('show');
        });
-
     // View Data    
     $('body').on('click', '.view', function () {
    
@@ -37,7 +36,6 @@
          $('#address').val(res.address);        
       }
    });
-
 });
    
    // Edit Data    
